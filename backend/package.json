@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon backend/server.js",
-    "start": "node backend/server.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "build": "npm install ",
+    "client-install": "npm install --prefix ../frontend",
+    "client-build": "npm run build --prefix ../frontend"
   },
   "keywords": [],
   "author": "",
