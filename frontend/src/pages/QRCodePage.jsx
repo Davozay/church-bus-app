@@ -28,6 +28,8 @@ export default function QRCodePage() {
     };
   }, []);
 
+  const registrationUrl = `https://church-bus-frontend.onrender.com/register`
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-400/40 to-blue-500 flex flex-col items-center justify-center p-4 relative overflow-hidden">
       {/* Floating bubbles will be injected here via JS */}
@@ -42,12 +44,12 @@ export default function QRCodePage() {
           />
         </div>
         
-        <h1 className="text-2xl font-bold text-center mb-4">Church Bus Registration</h1>
+        <h1 className="text-2xl font-bold text-center mb-4">Kings Convey Church Bus Registration</h1>
         <p className="text-center mb-6">Scan this QR code to register for the bus</p>
         
         <div className="flex justify-center mb-6">
           <QRCodeSVG 
-            value={`${window.location.origin}/register`}
+            value={registrationUrl}
             size={200}
             level="H"
           />

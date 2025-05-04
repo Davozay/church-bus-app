@@ -9,7 +9,7 @@ export default defineConfig({
     historyApiFallback: true
   },
   build: {
-    outDir: "dist",
+    outDir: "../frontend/dist",
     emptyOutDir: true,
   },
   plugins: [react(), tailwindcss()],

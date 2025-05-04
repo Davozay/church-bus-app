@@ -29,6 +29,7 @@ function App() {
               <RegistrationsPage />
             </PrivateRoute>
           } />
+          <Route path='*' element={<QRCodePage/>}/>
         </Routes>
       </AuthProvider>
     </Router>

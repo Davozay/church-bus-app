@@ -85,7 +85,8 @@ export default function RegistrationForm() {
     setIsSubmitting(true);
 
     try {
-      await axios.post('http://localhost:5000/api/attendees', formData);
+      await axios.post('https://church-bus-backend.onrender.com/api/attendees', formData);
+      // navigate('/');
       navigate('/success'); // Consider adding a success route
     } catch (err) {
       console.error('Submission error:', err);
