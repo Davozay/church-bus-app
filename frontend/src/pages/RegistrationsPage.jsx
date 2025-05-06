@@ -12,7 +12,7 @@ export default function RegistrationsPage() {
     const fetchRegistrations = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get('http://localhost:5000/api/admin/registrations', {
+        const res = await axios.get('https://church-bus-app-backend.onrender.com/api/admin/registrations', {
           headers: { Authorization: `Bearer ${token}` }
         });
         

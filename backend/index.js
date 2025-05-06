@@ -61,11 +61,11 @@ app.use("/api/attendees", require("./routes/attendees"));
 // Production Configuration
 if (process.env.NODE_ENV === "production") {
   // Serve static files from frontend
-  app.use(express.static(path.join(__dirname, "../frontend/dist")));
+  app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
   // Handle client-side routing
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../frontend/dist", "index.html"));
+    res.sendFile(path.join(__dirname, "frontend","dist", "index.html"));
   });
 }
 

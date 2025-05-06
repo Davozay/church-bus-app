@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js",
-    "build": "npm install ",
-    "client-install": "npm install --prefix ../frontend",
-    "client-build": "npm run build --prefix ../frontend"
+    "dev": "nodemon backend/index.js",
+    "start": "node backend/index.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+
   },
   "keywords": [],
   "author": "",
