@@ -1,0 +1,6 @@
+static:
+  publish: build/       # Your built React app is in the "build" folder
+  routes:
+    - type: rewrite     # Rewrite all routes to index.html
+      source: "/*"      # For ANY path (e.g., /register, /admin)
+      destination: "/index.html"  # Serve index.html instead
